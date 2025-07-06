@@ -8,8 +8,8 @@ import pickle
 
 
 # Load model and columns
-model = pickle.load(open("C:/Users/C8C7KG/Djangolearnings/loan_approval_system/loan_model.pkl", "rb"))
-model_columns = pickle.load(open("C:/Users/C8C7KG/Djangolearnings/loan_approval_system/model_columns.pkl", "rb"))
+model = pickle.load(open("loan_model.pkl", "rb"))
+model_columns = pickle.load(open("model_columns.pkl", "rb"))
 
 
 st.title("🏦 Loan Approval Predictor")
