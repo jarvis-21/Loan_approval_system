@@ -7,9 +7,12 @@ import numpy as np
 import pickle
 
 
-# Load model and columns
-model = pickle.load(open("loan_model.pkl", "rb"))
-model_columns = pickle.load(open("model_columns.pkl", "rb"))
+# Load model and columns (relative path)
+with open("loan_model.pkl", "rb") as f:
+    model = pickle.load(f)
+
+with open("model_columns.pkl", "rb") as f:
+    model_columns = pickle.load(f)
 
 
 st.title("🏦 Loan Approval Predictor")
